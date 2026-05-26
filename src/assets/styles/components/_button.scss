@@ -1,0 +1,43 @@
+.button{
+    display: inline-flex;
+    width: 100%;
+    max-width: 200px;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color-green);
+    color: var(--primary-color-black);
+    cursor: pointer;
+}
+.button,
+.btn {
+  font-family: "Spotify Mix", sans-serif;
+  font-weight: 700;
+}
+.button,
+.btn {
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.06); 
+  }
+
+  &:active {
+    transform: scale(0.97); 
+  }
+}
+.button,
+.btn {
+  transition: transform 0.2s cubic-bezier(0.3, 0, 0, 1);
+
+  &:hover {
+    transform: scale(1.06);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}

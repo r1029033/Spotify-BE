@@ -1,0 +1,29 @@
+:root {
+
+  /*Color theme */
+  /* Primary colors*/
+  --primary-color-black: #121212;
+  --primary-color-green: #1ED75F;
+  --primary-color-purple: #5F1CB3;
+
+  /* Secondary colors*/
+  --secondary-color-yellow: #F4C659;
+  --secondary-color-pink: #E3AEC3;
+  --secondary-color-red: #CE4522;
+  --secondary-color-blue: #2C82E8;
+
+  /* Neutrals colors*/
+  --neutral-color-bg-grey: #191414;
+  --neutral-color-dark-grey: #2A2A2A;
+  --neutral-color-light-grey: #6F6363;
+  --neutral-color-white: #F7F5F5;
+  --neutral-color-black-60: rgba(18, 18, 18, 0.6);
+
+  /* Gradients */
+  --gradient-green: linear-gradient(180deg, #1ED75F, #092914);
+  --gradient-purple: linear-gradient(180deg, #5F1CB3, #100E28);
+  --gradient-red: linear-gradient(180deg, #CE4522, #4C1609);
+  --gradient-yellow: linear-gradient(180deg, #F4C659, #5F4C1E);
+  --gradient-blue: linear-gradient(180deg, #669BEE, #091D3C);
+
+}

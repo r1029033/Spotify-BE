@@ -1,0 +1,47 @@
+.stacked-card {
+  position: relative;
+  width: 340px;
+  height: 520px;
+  margin: 0 auto;
+}
+
+.stacked-card__front,
+.stacked-card__back {
+  position: absolute;
+  width: 340px;
+  height: 520px;
+  border-radius: var(--radius-lg);
+}
+
+.stacked-card__front {
+  z-index: 4;
+  background: var(--secondary-color-pink);
+  padding: 72px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: auto;
+}
+
+.stacked-card__back--purple {
+  z-index: 2;
+  background: var(--primary-color-purple);
+  transform: rotate(7deg) translate(26px, 4px);
+}
+
+.stacked-card__back--orange {
+  z-index: 1;
+  background: var(--secondary-color-red);
+  transform: rotate(-8deg) translate(-22px, 8px);
+}
+
+.stacked-card::before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 510px;
+  border-radius: var(--radius-lg);
+  background: var(--secondary-color-yellow);
+  z-index: 0; 
+  transform: rotate(-4deg) translate(8px, -8px);
+}

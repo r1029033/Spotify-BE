@@ -1,0 +1,266 @@
+h1, h2, p {
+  color: var(--neutral-color-white);
+}
+
+p {
+  font-weight: 440;
+}
+
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.phone {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// monday games
+
+.hero {
+  background: var(--primary-color-purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  text-align: left;
+  min-height: 220px;
+  padding: 0 0 0 20px;
+  width: 100%;
+  max-width: 880px;
+}
+
+.hero_section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+
+  h2, p {
+    margin: 0;
+  }
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 880px;
+}
+
+.monday-games_img,
+.on-the-go_img {
+  display: block;
+  margin: 0 0 0 auto;
+  margin-top: auto;
+  align-self: flex-end;
+  object-fit: contain;
+  width: 160px;
+  height: 160px;
+}
+
+// on the road
+
+.road-section {
+  background: var(--secondary-color-pink);
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 220px;
+  text-align: left;
+  padding: 0 0 0 20px;
+  border-radius: 16px;
+}
+
+.road-section_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  flex: 1;
+}
+
+.road-section_subtitle,
+.road-section_description {
+  margin: 0;
+  color: var(--primary-color-black);
+}
+
+.road-section_title,
+.game-card_title {
+  width: 100%;
+  max-width: 880px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+// all games
+
+.game-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  margin-bottom: 40px;
+  transition: 0.25s;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 880px;
+
+  &:hover {
+    background: var(--neutral-color-dark-grey);
+  }
+}
+
+.game-img_1,
+.game-img_2 {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-card-wrap {
+  flex: 1;
+}
+
+.game-card_title,
+.game-card-type,
+.road-section_title,
+.road-section_subtitle,
+.hero_title {
+  font-weight: 700;
+}
+
+.duration {
+  align-self: flex-start;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+// navbar
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(100);
+
+    img {
+      filter: brightness(100);
+      transition: 0.2s;
+    }
+  }
+}
+
+.navbar img {
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-item .dashboard-img {
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.navbar-label-profile,
+.navbar-label-stats {
+  color: var(--neutral-color-light-grey);
+}
+
+.navbar-label-dashboard {
+  color: var(--neutral-color-white);
+}
+
+.navbar-top {
+  display: none;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+}
+
+.navbar-top-link-stats,
+.navbar-top-link-profile {
+  width: 130px;
+  height: 60px;
+  color: var(--neutral-color-light-grey);
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.25s;
+  border: none;
+  background: var(--neutral-color-bg-grey);
+  border-radius: 16px;
+
+  &:hover {
+    color: var(--neutral-color-white);
+    background-color: var(--neutral-color-dark-grey);
+  }
+}
+
+.navbar-top-link-dashboard {
+  background: transparent;
+  border: 0;
+  color: var(--neutral-color-white);
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--neutral-color-white);
+  padding-bottom: 6px;
+}
+
+@media (min-width: 900px) {
+  .navbar-top {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-item {
+    flex-direction: row;
+  }
+
+  .navbar-top-link {
+    font-size: 24px;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+ .hero,
+  .road-section {
+    min-height: 140px;
+  }
+
+  .monday-games_img,
+  .on-the-go_img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .dashboard-page {
+    padding: 50px 20px;
+  }
+}

@@ -1,0 +1,35 @@
+// general styles
+@use 'general/animations';
+@use "general/base";
+@use "general/font";
+@use "general/colors";
+@use "general/transition";
+@use "general/radius";
+
+// components
+@use "components/button";
+@use "components/login-button";
+@use "components/card_transition";
+@use "components/stacked-card";
+@use "components/lyric-display";
+@use "components/quizscreen";
+@use "components/resultscreen";
+@use "components/navbar";
+@use "components/language-picker-button";
+@use "components/loader";
+
+
+// pages
+@use "pages/login";
+@use "pages/login-success";
+@use "pages/onboarding";
+@use "pages/dashboard";
+@use "pages/game2";
+@use "pages/stats";
+@use "pages/profile";
+@use "pages/listenup";
+@use "pages/language-picker";
+@use "pages/onboarding-profile";
+@use "pages/tense-intro";
+@use "pages/tense-explanation";
+@use "pages/error-page";

@@ -1,0 +1,84 @@
+.onboarding-profile {
+    background-image: url("../../images/bg_overlay.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--neutral-color-white);
+}
+
+.onboarding-profile input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 50px;
+    border-radius: 16px;
+    border: solid 1.5px var(--neutral-color-white);
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: var(--neutral-color-bg-grey);
+    color: var(--neutral-color-white);
+}
+
+.onboarding-profile__input-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width:450px;
+    margin-bottom: 20px;
+}
+
+.onboarding-profile__preview-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.onboarding-profile__avatars {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.onboarding-profile__avatar-btn {
+  background-color: var(--primary-color-purple);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+
+  &.selected {
+    border-color: var(--primary-color-green);
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+    .onboarding-profile__preview-img{
+        width: 120px;
+        height: 120px;
+    }
+    .onboarding-profile__avatar-btn img {
+        width: 30px;
+        height:30px;
+    }
+
+}

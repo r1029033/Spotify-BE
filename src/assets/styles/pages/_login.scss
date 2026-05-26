@@ -1,0 +1,42 @@
+.login-page {
+  background-image: url("../../images/bg_overlay.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--neutral-color-white);
+}
+
+.signup-text {
+  text-align: center;
+}
+
+.signup-text a {
+  display: block;
+  margin-top: 5px;
+  color: var(--primary-color-green);
+}
+
+.login-page__image {
+  padding: 20px;
+  width: 250px;
+
+}
+
+
+@media (max-width: 900px) {
+.login-page__image {
+  width: 150px;
+
+}
+}

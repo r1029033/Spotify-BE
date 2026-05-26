@@ -1,0 +1,28 @@
+.language-picker-button {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 40px;
+    border-radius: 31px;
+    background-color: var(--neutral-color-bg-grey);
+    color: var(--neutral-color-white);
+    border: solid 1px var(--neutral-color-white);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform 0.2s cubic-bezier(0.3, 0, 0, 1);
+
+    &:hover {
+        border-color: var(--primary-color-green);
+        transform: scale(1.06);
+    }
+
+    &:focus {
+        background-color: var(--primary-color-green);
+        color: var(--primary-color-black);
+        border: solid 2px var(--primary-color-green);
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}

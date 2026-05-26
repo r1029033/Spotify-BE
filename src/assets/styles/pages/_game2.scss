@@ -1,0 +1,77 @@
+.game2-container {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    background: var(--gradient-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game2-container.quiz-bg{
+    background: var(--neutral-color-bg-grey);
+}
+
+.game2-container.result-bg{
+    background: var(--neutral-color-bg-grey);
+}
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.song-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    
+}
+
+.song-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.song-artist{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.progress-bar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: var(--neutral-color-white);
+}
+.progress-bar{
+    width: 100%;
+    color: var(--neutral-color-white);
+}
+
+.control-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.control-buttons button{
+    background-color: var(--neutral-color-white);
+    color: var(--primary-color-black);
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 10px;
+}

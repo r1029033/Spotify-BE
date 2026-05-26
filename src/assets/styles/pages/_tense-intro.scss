@@ -1,0 +1,136 @@
+.transition-screen__cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  padding: 20px;
+}
+
+.grammar-stack {
+  position: relative;
+  width: 360px;
+  height: 520px;
+}
+
+.grammar-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease,
+    z-index 0.6s;
+}
+
+.grammar-card__content {
+  width: 100%;
+  height: 100%;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.grammar-card__text,
+.grammar-card__next {
+  color: var(--primary-color-black);
+  font-family: "Spotify Mix", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grammar-card__text {
+  font-size: 18px;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+.grammar-card__next {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.grammar-card--pink {
+  background: var(--secondary-color-pink);
+}
+
+.grammar-card--red {
+  background: var(--secondary-color-red);
+}
+
+.grammar-card--yellow {
+  background: var(--secondary-color-yellow);
+}
+
+
+.grammar-stack--0 {
+  .grammar-card--pink {
+    z-index: 3;
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  .grammar-card--red {
+    z-index: 2;
+    transform: rotate(8deg) translate(24px, -6px);
+  }
+
+  .grammar-card--yellow {
+    z-index: 1;
+    transform: rotate(-8deg) translate(-24px, -6px);
+  }
+}
+
+
+.grammar-stack--1 {
+  .grammar-card--pink {
+    z-index: 1;
+    transform:
+      rotate(-14deg)
+      translate(-60px, 30px)
+      scale(0.92);
+  }
+
+  .grammar-card--red {
+    z-index: 3;
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  .grammar-card--yellow {
+    z-index: 2;
+    transform: rotate(8deg) translate(24px, -6px);
+  }
+}
+
+
+.grammar-stack--2 {
+  .grammar-card--pink {
+    z-index: 1;
+    transform:
+      rotate(-14deg)
+      translate(-60px, 30px)
+      scale(0.9);
+  }
+
+  .grammar-card--red {
+    z-index: 1;
+    transform:
+      rotate(14deg)
+      translate(60px, 30px)
+      scale(0.9);
+  }
+
+  .grammar-card--yellow {
+    z-index: 3;
+    transform: rotate(0deg) translate(0, 0);
+  }
+}

@@ -1,0 +1,110 @@
+.onboarding-screen {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--primary-color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Background */
+.onboarding-screen__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.onboarding-screen__logo {
+  padding: 20px;
+  width: 250px;
+
+}
+
+.onboarding-screen__spotify-text{
+    padding: 20px;
+    width: 250px;
+}
+
+.onboarding-screen__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 18, 18, 0.62);
+}
+
+/* Layout */
+.onboarding-screen__phone {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Typography */
+.onboarding-screen__title {
+  margin: 0;
+  color: var(--neutral-color-white);
+  font-size: 50px;
+  line-height: 1.05;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.onboarding-screen__content-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.onboarding-screen__from{
+  color: var(--neutral-color-white);
+}
+
+.onboarding-screen__description{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.onboarding-screen__spotify-title-image{
+    align-self: center;
+}
+
+.onboarding-screen__spotify-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+.onboarding-screen__logo {
+  padding: 20px;
+  width: 150px;
+
+}
+}

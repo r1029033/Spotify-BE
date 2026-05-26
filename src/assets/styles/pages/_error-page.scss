@@ -1,0 +1,33 @@
+.error-page {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-color-black);
+  color: var(--neutral-color-white);
+  font-family: "Spotify Mix", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 56px;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-page__title {
+  color: var(--primary-color-green);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.error-page__image {
+  width: min(80vw, 820px);
+  display: block;
+}
+
+.error-page__button {
+  min-width: 170px;
+}

@@ -1,0 +1,45 @@
+.transition-screen {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-color-black);
+  color: var(--neutral-color-white);
+  font-family: "Spotify Mix", sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.transition-screen__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 24px 0;
+  z-index: 2;
+}
+
+.transition-screen__icon-button {
+  background: transparent;
+  border: none;
+  color: var(--neutral-color-white);
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.transition-screen__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.transition-screen__bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.transition-screen__bottom-button {
+  min-width: 165px;
+}

@@ -1,0 +1,12 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--space-6) var(--space-5) 96px;
+  background-color: var(--neutral-color-bg-grey);
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}

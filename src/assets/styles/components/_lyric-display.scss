@@ -1,0 +1,24 @@
+.lyric-display{
+    background-color: var(--secondary-color-pink);
+    border-radius: 27px;
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: hidden; // hide overflowing lyrics at the top and bottom
+}
+
+.lyric-line {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    color: var(--neutral-color-black-60);
+}
+
+.lyric-line.active{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color-black);
+}

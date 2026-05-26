@@ -1,0 +1,142 @@
+.statscontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.statstop {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    align-self: flex-start;
+  }
+}
+
+.statscontent h1 {
+  font-size: 50px;
+}
+
+
+
+.barchart {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 300px;
+  width: 100%;
+  max-width: 500px;
+  padding-bottom: 24px; // space for labels
+  position: relative;
+  color: var(--neutral-color-white);
+  margin-bottom: 20px;
+}
+
+.bar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  height: 100%;
+  gap: 10px;
+}
+
+.bar {
+  width: 100%;
+  background: var(--primary-color-green);
+  border-radius: 30px 30px 30px 30px; // pill-shape
+  min-height: 20px;
+  width: 50px;
+  transition: height 0.3s ease;
+}
+
+.bar.mins{
+    font-size: 18px;
+}
+
+.bar-label {
+  font-size: 18px;
+}
+
+.motivationtile{
+    width: 100%;
+    max-width: 880px;
+    padding: 20px 10px;
+    background-color: var(--primary-color-purple);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    gap: 20px;
+    color: var(--neutral-color-white);
+    margin-bottom: 50px;
+}
+
+.motivationtile p{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.statstile{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.statstiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    color: var(--neutral-color-white);
+}
+
+.statstile p{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Laptop: tile 1 and 3 get image bg, tile 2 and 4 get color bg */
+.statstile:nth-child(1),
+.statstile:nth-child(3) {
+    background-image: url(../../images/bg.png);
+    background-size: cover;
+}
+
+.statstile:nth-child(2){
+    background-color: var(--primary-color-purple);
+}
+
+.statstile:nth-child(4){
+    background-color: var(--primary-color-green);
+}
+
+/* Mobile: tile 3 gets color, tile 4 gets image bg*/
+@media (max-width: 900px) {
+
+    .statstile:nth-child(3) {
+    background-image: none;
+    background-color: var(--primary-color-green);
+  }
+  .statstile:nth-child(4) {
+    background-image: url(../../images/bg.png);
+    background-size: cover;
+  }
+
+  .bar {
+    width: 30px;
+  }
+}
