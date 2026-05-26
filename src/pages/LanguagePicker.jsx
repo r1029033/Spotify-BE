@@ -13,7 +13,7 @@ export default function LanguagePicker({ userId }) {
   const handleSelect = async (lang) => {
     setSelected(lang);
     setError(null);
-await fetch("${import.meta.env.VITE_API_URL}/api/users/language", {
+await fetch(`${import.meta.env.VITE_API_URL}/api/users/language`, {
   method: "PATCH",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ language: lang }),
@@ -46,4 +46,5 @@ navigate("/dashboard");
     </main>
   );
 }
+
 

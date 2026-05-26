@@ -28,7 +28,7 @@ export default function OnboardingProfile() {
     setLoading(true);
     setError("");
 
-    fetch("${import.meta.env.VITE_API_URL}/api/users/profile", {
+    fetch(`${import.meta.env.VITE_API_URL}/api/users/profile`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -116,4 +116,5 @@ export default function OnboardingProfile() {
     </main>
   );
 }
+
 

@@ -41,3 +41,4 @@ function LyricDisplay({ lyrics, currentTime }) {
 
 export default LyricDisplay;
 
+
