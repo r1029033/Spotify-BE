@@ -57,7 +57,7 @@ const getActiveDay = () => {
 const activeDay = getActiveDay();
 
   useEffect(() => {
-    fetch("$\{import.meta.env.VITE_API_URL\}/api/users")
+    fetch("${import.meta.env.VITE_API_URL}/api/users")
       .then((res) => res.json())
 .then((data) => {
   setNickname(data.nickname || "Player");
@@ -78,7 +78,7 @@ const activeDay = getActiveDay();
 })
       .catch((err) => console.error("Failed to fetch user:", err));
 
-    fetch("$\{import.meta.env.VITE_API_URL\}/api/stats")
+    fetch("${import.meta.env.VITE_API_URL}/api/stats")
       .then((res) => res.json())
       .then((data) => setStats(data))
       .catch((err) => console.error("Failed to fetch stats:", err));
@@ -88,7 +88,7 @@ const activeDay = getActiveDay();
     if (!draftNickname.trim()) return;
     setSaving(true);
 
-    fetch("$\{import.meta.env.VITE_API_URL\}/api/users/profile", {
+    fetch("${import.meta.env.VITE_API_URL}/api/users/profile", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
@@ -326,3 +326,4 @@ setIsEditing(false);
 }
 
 export default Profile;
+

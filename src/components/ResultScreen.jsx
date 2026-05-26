@@ -37,3 +37,4 @@ function ResultScreen({ score, total, onPlayAgain }) {
 }
 
 export default ResultScreen;
+

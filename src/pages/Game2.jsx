@@ -33,7 +33,7 @@ function Game2() {
     setIsPlaying(false);
     setDuration(0);
 
-    fetch("$\{import.meta.env.VITE_API_URL\}/api/game2/random")
+    fetch("${import.meta.env.VITE_API_URL}/api/game2/random")
       .then((res) => res.json())
       .then((data) => {
         setSong(data.song);
@@ -82,7 +82,7 @@ const handleQuizComplete = (finalScore) => {
   const listenedTime = audioRef.current ? audioRef.current.currentTime : 0;
 
   // Send the results to the backend to update stats
-  fetch("$\{import.meta.env.VITE_API_URL\}/api/stats/update", {
+  fetch("${import.meta.env.VITE_API_URL}/api/stats/update", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -245,3 +245,4 @@ const handleQuizComplete = (finalScore) => {
 }
 
 export default Game2;
+

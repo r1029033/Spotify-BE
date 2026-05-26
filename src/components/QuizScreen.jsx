@@ -86,3 +86,4 @@ function QuizScreen({ questions, onComplete }) {
 }
 
 export default QuizScreen;
+

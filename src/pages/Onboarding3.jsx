@@ -40,3 +40,4 @@ export default function Onboarding3() {
     </main>
   );
 }
+

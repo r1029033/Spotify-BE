@@ -59,8 +59,8 @@ function Game() {
       // If onlyLanguage=true, we omit q and backend will use a safe fallback query.
       const url =
         onlyLanguage || !q
-          ? `$\{import.meta.env.VITE_API_URL\}/api/jamendo/search?limit=10&onlyLyrics=1${langParam}`
-          : `$\{import.meta.env.VITE_API_URL\}/api/jamendo/search?${qParam}&limit=10&onlyLyrics=1${langParam}`;
+          ? `${import.meta.env.VITE_API_URL}/api/jamendo/search?limit=10&onlyLyrics=1${langParam}`
+          : `${import.meta.env.VITE_API_URL}/api/jamendo/search?${qParam}&limit=10&onlyLyrics=1${langParam}`;
 
       const res = await fetch(url);
       const data = await res.json();
@@ -142,7 +142,7 @@ function Game() {
     setLyricsStatus("loading");
 
     try {
-      const res = await fetch(`$\{import.meta.env.VITE_API_URL\}/api/jamendo/lyrics/${song.id}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/jamendo/lyrics/${song.id}`);
       const data = await res.json();
 
       const lines = sanitizeLines(data.lyrics);
@@ -351,3 +351,4 @@ function Game() {
 }
 
 export default Game;
+

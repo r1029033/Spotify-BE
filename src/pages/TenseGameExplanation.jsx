@@ -44,3 +44,4 @@ navigate("/game");
     </main>
   );
 }
+

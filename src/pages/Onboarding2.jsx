@@ -35,3 +35,4 @@ export default function Onboarding2() {
     </main>
   );
 }
+
