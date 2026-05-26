@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import dashboardNav from "../assets/images/dashboard.svg";
-import statsNav from "../assets/images/stats.svg";
+import statsNav from "../assets/images/Stats.svg";
 import profileNav from "../assets/images/profile.svg";
 
 function NavbarBottom() {
