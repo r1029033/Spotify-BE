@@ -11,12 +11,12 @@ import Loader from "../components/Loader";
     const [dailyStats, setDailyStats] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:3001/api/stats")
+      fetch("$\{import.meta.env.VITE_API_URL\}/api/stats")
         .then((res) => res.json())
         .then((data) => setStats(data))
         .catch((err) => console.error("Failed to fetch stats:", err));
 
-      fetch("http://localhost:3001/api/stats/daily")
+      fetch("$\{import.meta.env.VITE_API_URL\}/api/stats/daily")
     .then((res) => res.json())
     .then((data) => setDailyStats(data))
     .catch((err) => console.error("Failed to fetch daily stats:", err));
